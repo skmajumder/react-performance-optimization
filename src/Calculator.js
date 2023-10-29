@@ -20,8 +20,8 @@ function Calculator({ workouts, allowSound }) {
     }
 
     playSound();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [duration]);
+  
+  }, [duration, allowSound]);
 
   const mins = Math.floor(duration);
   const seconds = (duration - mins) * 60;
